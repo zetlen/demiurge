@@ -1,0 +1,14 @@
+{
+  "availableShippingMethods": [
+    {
+      "id": "dhl",
+      "label": "Mock DHL Ground",
+      "price": 0
+    },
+    {
+      "id": "horse",
+      "label": "Horseback",
+      "price": 1.7
+    }
+  ]
+}
