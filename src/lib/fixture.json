@@ -2,7 +2,7 @@
   "availableShippingMethods": [
     {
       "id": "dhl",
-      "label": "Mock DHL Ground",
+      "label": "DHL Ground",
       "price": 0
     },
     {
