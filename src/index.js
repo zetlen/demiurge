@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import DeliveryMethodChooser from "./DeliveryMethodChooser";
-import ShowMarkup from "../lib/ShowMarkup";
-import fixture from "../lib/fixture.json";
+import ShowMarkup from "./lib/ShowMarkup";
+import fixture from "./lib/fixture.json";
 
 const chooser = <DeliveryMethodChooser {...fixture} />;
 

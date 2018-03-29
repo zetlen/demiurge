@@ -6,7 +6,6 @@
   "homepage": "https://codesandbox.io/s/new",
   "main": "src/index.js",
   "dependencies": {
-    "inspect-react-element": "1.1.1",
     "pretty": "2.0.0",
     "prismjs": "1.13.0",
     "react": "16.2.0",

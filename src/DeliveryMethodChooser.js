@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { bool, arrayOf, shape, string, func } from "prop-types";
 import DeliveryMethodChoice from "./DeliveryMethodChoice";
-import ShippingIcon from "../lib/ShippingIcon";
+import ShippingIcon from "./lib/ShippingIcon";
 
 export default class DeliveryMethodChooser extends Component {
   static propTypes = {
