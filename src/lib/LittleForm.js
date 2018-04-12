@@ -4,7 +4,7 @@ const inputTypes = {
   select: (data, config) => (
     <select className="browser-default" name={config.name}>
       {data[config.source].map(record => (
-        <option value={record[config.valueKey]}>
+        <option key={record[config.valueKey]} value={record[config.valueKey]}>
           {record[config.labelKey]}
         </option>
       ))}
