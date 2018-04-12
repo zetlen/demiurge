@@ -1,9 +1,9 @@
 {
-  "name": "demiurge-v2-bound",
-  "version": "2.0.0",
+  "name": "demiurge-v4-littleform",
+  "version": "4.0.0",
   "description": "Just a bridge between the real and ideal.",
   "keywords": [],
-  "homepage": "https://codesandbox.io/s/new",
+  "homepage": "https://codesandbox.io/s/github/zetlen/demiurge/tree/v4-littleform",
   "main": "src/index.js",
   "dependencies": {
     "apollo-cache-inmemory": "1.1.12",
