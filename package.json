@@ -3,7 +3,7 @@
   "version": "5.0.0",
   "description": "Just a bridge between the real and ideal.",
   "keywords": [],
-  "homepage": "https://codesandbox.io/s/github/zetlen/demiurge/tree/v4-littleform",
+  "homepage": "https://codesandbox.io/s/github/zetlen/demiurge/tree/v5-overengineered",
   "main": "src/index.js",
   "dependencies": {
     "apollo-cache-inmemory": "1.1.12",
