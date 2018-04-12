@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Just a bridge between the real and ideal.",
   "keywords": [],
-  "homepage": "https://codesandbox.io/s/new",
+  "homepage": "https://codesandbox.io/s/github/zetlen/demiurge/tree/v1-simple",
   "main": "src/index.js",
   "dependencies": {
     "pretty": "2.0.0",
