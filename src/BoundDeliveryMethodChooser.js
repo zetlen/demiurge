@@ -14,12 +14,26 @@ class BoundDeliveryMethodChooser extends React.Component {
   }
 }
 
-export default graphql(gql`
-  query {
-    availableShippingMethods {
-      id
-      label
-      price
+export default graphql(
+  gql`
+    query shippingInfo($user: Number) {
+      availableShippingMethods {
+        id
+        label
+        price
+        additionalFields
+      }
+      stores: stores(nearby: $user) {
+        id
+        name
+      }
     }
+  `,
+  {
+    options: ({ user }) => ({
+      variables: {
+        user
+      }
+    })
   }
-`)(BoundDeliveryMethodChooser);
+)(BoundDeliveryMethodChooser);

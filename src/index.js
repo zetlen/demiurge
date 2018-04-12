@@ -7,7 +7,7 @@ import mocks from "./lib/graphql-mocks.js";
 
 const chooser = (
   <ApolloProvider mocks={mocks} removeTypename={true}>
-    <BoundDeliveryMethodChooser />
+    <BoundDeliveryMethodChooser user={123} />
   </ApolloProvider>
 );
 

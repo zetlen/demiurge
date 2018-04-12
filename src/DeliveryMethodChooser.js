@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { bool, arrayOf, shape, string, func } from "prop-types";
-import BoundShipToStoreSelector from "./BoundShipToStoreSelector";
 import DeliveryMethodChoice from "./DeliveryMethodChoice";
 import ShippingIcon from "./lib/ShippingIcon";
 
@@ -23,23 +22,14 @@ export default class DeliveryMethodChooser extends Component {
           <ShippingIcon />
         </h5>
         <div className="methods">
-          {availableShippingMethods.map(
-            method =>
-              method.id === "shiptostore" ? (
-                <BoundShipToStoreSelector
-                  user={123}
-                  key={method.id}
-                  {...method}
-                  onChange={onChange}
-                />
-              ) : (
-                <DeliveryMethodChoice
-                  key={method.id}
-                  {...method}
-                  onChange={onChange}
-                />
-              )
-          )}
+          {availableShippingMethods.map(method => (
+            <DeliveryMethodChoice
+              key={method.id}
+              data={this.props}
+              {...method}
+              onChange={onChange}
+            />
+          ))}
         </div>
       </div>
     );
