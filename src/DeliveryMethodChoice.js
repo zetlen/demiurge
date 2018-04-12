@@ -39,8 +39,8 @@ export default class DeliveryMethodChoice extends React.Component {
   render() {
     return (
       <p>
-        {this.props.fields.map(field => (
-          <span key={field.name}>
+        {this.props.fields.map((field, i) => (
+          <span key={i}>
             {this.state.viewModel.renderInput({
               ...field,
               onChange: this.processWithTraits
