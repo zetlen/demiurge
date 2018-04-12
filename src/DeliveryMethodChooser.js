@@ -23,21 +23,23 @@ export default class DeliveryMethodChooser extends Component {
           <ShippingIcon />
         </h5>
         <div className="methods">
-          {availableShippingMethods.map(method =>
-            method.name === "Ship to store:"
-            ? (
-              <BoundShipToStoreSelector
-                key={method.id}
-                {...method}
-                onChange={props.onChange}
-              />
-            ) : (
-              <DeliveryMethodChoice
-                key={method.id}
-                {...method}
-                onChange={onChange}
-              />
-          ))}
+          {availableShippingMethods.map(
+            method =>
+              method.id === "shiptostore" ? (
+                <BoundShipToStoreSelector
+                  user={123}
+                  key={method.id}
+                  {...method}
+                  onChange={onChange}
+                />
+              ) : (
+                <DeliveryMethodChoice
+                  key={method.id}
+                  {...method}
+                  onChange={onChange}
+                />
+              )
+          )}
         </div>
       </div>
     );

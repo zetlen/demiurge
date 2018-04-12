@@ -9,6 +9,11 @@
       "id": "horse",
       "label": "Horseback",
       "price": 1.7
+    },
+    {
+      "id": "shiptostore",
+      "label": "Ship To Store:",
+      "price": 0
     }
   ]
 }

@@ -9,14 +9,15 @@ export default class ShipToStoreSelector extends React.Component {
           id={this.props.id}
           onChange={this.props.onChange}
         />
-      <label htmlFor={this.props.id}>
-        Ship to store:
-        <select>
-          {this.props.stores.map(({ id, name }) => (
-            <option value={id}>{name}</option>
-          ))}
-        </select>
-      </label>
+        <label htmlFor={this.props.id}>
+          Ship to store:
+          <select className="browser-default">
+            {this.props.stores.map(({ id, name }) => (
+              <option value={id}>{name}</option>
+            ))}
+          </select>
+        </label>
+      </p>
     );
   }
 }
