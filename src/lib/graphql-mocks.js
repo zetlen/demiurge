@@ -10,9 +10,7 @@ const mocks = [
         query shippingInfo($user: Number) {
           availableShippingMethods {
             id
-            label
-            price
-            additionalFields
+            fields
           }
           stores: stores(nearby: $user) {
             id
@@ -26,21 +24,50 @@ const mocks = [
         availableShippingMethods: [
           {
             id: "dhl",
-            label: "DHL Ground",
-            price: 0,
-            additionalFields: []
+            fields: [
+              {
+                type: "radio",
+                name: "delivery_method",
+                source: "id",
+                label: "DHL Ground"
+              },
+              {
+                type: "price",
+                label: "€",
+                price: 0
+              }
+            ]
           },
           {
             id: "horse",
-            label: "Horseback",
-            price: 1.7,
-            additionalFields: []
+            fields: [
+              {
+                type: "radio",
+                label: "Horseback",
+                name: "delivery_method",
+                source: "id"
+              },
+              {
+                type: "price",
+                label: "€",
+                price: 1.7
+              }
+            ]
           },
           {
             id: "shiptostore",
-            label: "Ship To Store:",
-            price: 0,
-            additionalFields: [
+            fields: [
+              {
+                type: "radio",
+                label: "Ship To Store",
+                name: "delivery_method",
+                source: "id"
+              },
+              {
+                type: "price",
+                label: "€",
+                price: 0
+              },
               {
                 type: "select",
                 name: "ship_to",

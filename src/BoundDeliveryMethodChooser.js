@@ -19,9 +19,7 @@ export default graphql(
     query shippingInfo($user: Number) {
       availableShippingMethods {
         id
-        label
-        price
-        additionalFields
+        fields
       }
       stores: stores(nearby: $user) {
         id
